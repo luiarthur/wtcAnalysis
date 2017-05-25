@@ -19,5 +19,5 @@ a semi-colon.
 - `realAns`: whether the fugue answer is real instead of tonal (Y/N)
 - `ansDomCad`: whether the fugue answer cadences strongly in the dominant (Y/N)
 - `epsAfterAns`: whether the answer is followed by a short episode (Y/N)
-- `expoProg`: list of chord progression of exposition (comma separated)
-- `subject`: list of scale degrees in fugue subject (comma seperated)
+- `expoProg`: list of chord progression of exposition (;-separated)
+- `subject`: list of scale degrees in fugue subject (;-separated)

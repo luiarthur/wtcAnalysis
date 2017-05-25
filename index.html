@@ -1,0 +1,61 @@
+<html>
+
+<head>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/jquery.dynatable.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery-csv.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="/css/clean-blog.min.css"/>
+<link rel="stylesheet" type="text/css" href="/css/jquery.dynatable.css"/>
+</head>
+
+<body>
+<header class="intro-header" style="background-color:grey; height:60px; margin:0">
+</header>
+
+<article>
+  <div class="container">
+
+  <table id="wtc" class="table">
+    <thead style="background-color: grey">
+      <th style="font-weight:normal">Book</th>
+      <th style="font-weight:normal">Key</th>
+      <th style="font-weight:normal">Meter</th>
+      <th style="font-weight:normal">Start Degree</th>
+      <th style="font-weight:normal">End Degree</th>
+      <th style="font-weight:normal">Voices</th>
+      <th style="font-weight:normal">Double Fugue</th>
+      <th style="font-weight:normal">CS1</th>
+      <th style="font-weight:normal">CS2</th>
+      <th style="font-weight:normal">Stretto</th>
+      <th style="font-weight:normal">Real Answer</th>
+      <th style="font-weight:normal">Tonal Answer</th>
+      <th style="font-weight:normal">Dominant Cadence in Answer</th>
+      <th style="font-weight:normal">Episode after Answer</th>
+      <th style="font-weight:normal">Expo. Progression</th>
+      <th style="font-weight:normal">Subject</th>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <script>
+  $('#wtc').dynatable({
+    dataset: {
+      ajax: true,
+      ajaxUrl: '/dat/wtc.json',
+      ajaxOnLoad: true,
+      paginationPerPage:20,
+      records: []
+    }
+  });
+  </script> 
+
+  </div>
+</article>
+
+</body>
+
+
+</html>
